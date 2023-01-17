@@ -2,4 +2,6 @@
     <string name="app_name">DiallingApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_2">2</string>
+    <string name="add_a_number">Add a number</string>
 </resources>
