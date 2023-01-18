@@ -12,4 +12,7 @@
     <string name="_7">7</string>
     <string name="_9">9</string>
     <string name="_6">6</string>
+    <string name="_0">0</string>
+    <string name="snowflake">*</string>
+    <string name="sharp">#</string>
 </resources>
