@@ -9,5 +9,13 @@
         android:id="@+id/callFragment"
         android:name="com.example.diallingapp.ui.CallFragment"
         android:label="fragment_call"
-        tools:layout="@layout/fragment_call" />
+        tools:layout="@layout/fragment_call" >
+        <action
+            android:id="@+id/action_callFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.diallingapp.ui.ContactFragment"
+        android:label="ContactFragment" />
 </navigation>
