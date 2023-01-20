@@ -13,4 +13,7 @@ class CallViewModel : ViewModel() {
             callList.add(call)
         }
     }
+    init{
+        getCalls()
+    }
 }

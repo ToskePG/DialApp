@@ -13,9 +13,42 @@
         <action
             android:id="@+id/action_callFragment_to_contactFragment"
             app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_callFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/contactFragment"
         android:name="com.example.diallingapp.ui.ContactFragment"
-        android:label="ContactFragment" />
+        android:label="ContactFragment" >
+        <action
+            android:id="@+id/action_contactFragment_to_contactInfoFragment"
+            app:destination="@id/contactInfoFragment" />
+        <action
+            android:id="@+id/action_contactFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+        <action
+            android:id="@+id/action_contactFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactInfoFragment"
+        android:name="com.example.diallingapp.ui.ContactInfoFragment"
+        android:label="fragment_contact_info"
+        tools:layout="@layout/fragment_contact_info" >
+        <action
+            android:id="@+id/action_contactInfoFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.diallingapp.ui.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
 </navigation>

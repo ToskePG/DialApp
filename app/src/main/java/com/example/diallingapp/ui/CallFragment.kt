@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
+import androidx.navigation.fragment.findNavController
+import com.example.diallingapp.R
 import com.example.diallingapp.databinding.FragmentCallBinding
 
 
@@ -89,7 +91,11 @@ class CallFragment : Fragment() {
         binding.callButton.setOnClickListener{
             makeCall()
         }
+        binding.addToContacts.setOnClickListener{
+            findNavController().navigate(R.id.action_callFragment_to_contactFragment)
+        }
     }
+
     private fun disableCallButton(){
         binding.callButton.setBackgroundColor(Color.GRAY)
         binding.callButton.isEnabled = false
