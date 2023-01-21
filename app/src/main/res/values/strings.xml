@@ -21,4 +21,6 @@
     <string name="apr_27_14_16">Apr 27, 14:16</string>
     <string name="danilo_milkov_tosic">Danilo Milkov Tosic</string>
     <string name="call_history">Call History</string>
+    <string name="you_have_no_contacts_yet">You have no contacts yet</string>
+    <string name="load_contacts_to_recycler">Load Contacts to Recycler</string>
 </resources>

@@ -36,6 +36,9 @@
         android:name="com.example.diallingapp.ui.ContactInfoFragment"
         android:label="fragment_contact_info"
         tools:layout="@layout/fragment_contact_info" >
+        <argument
+            android:name="name"
+            app:argType="string"
         <action
             android:id="@+id/action_contactInfoFragment_to_contactFragment"
             app:destination="@id/contactFragment" />
