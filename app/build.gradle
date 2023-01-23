@@ -34,18 +34,40 @@ android {
     }
 }
 
+
+
 dependencies {
 
-    implementation "com.github.bumptech.glide:glide:$glide_version"
+    // Core
     implementation "androidx.core:core-ktx:$core_version"
     implementation "androidx.appcompat:appcompat:$app_compat_version"
+
+    // Material
     implementation "com.google.android.material:material:$material_version"
-    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_verison"
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
-    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
-    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
-    implementation("androidx.fragment:fragment-ktx:$fragment_version")
-    implementation("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+
+    // Constraint layout
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+
+    // Hilt - DI
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+
+    // Navigation component
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Timber
+    implementation "com.jakewharton.timber:timber:$timber_version"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3_version"
 }

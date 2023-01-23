@@ -23,6 +23,7 @@ class ContactFragment : Fragment() {
     private val viewModel: ContactViewModel by viewModels()
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
