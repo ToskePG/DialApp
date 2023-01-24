@@ -23,4 +23,15 @@
     <string name="call_history">Call History</string>
     <string name="you_have_no_contacts_yet">You have no contacts yet</string>
     <string name="load_contacts_to_recycler">Load Contacts to Recycler</string>
+    <string name="call">Call</string>
+    <string name="chat">Chat</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="recharge">Recharge</string>
+    <string name="profile">Profile</string>
+    <string name="support">Support</string>
+    <string name="call_frag">Call</string>
+    <string name="contacts_frag">Contacts</string>
+    <string name="home">Home</string>
+    <string name="chat_frag">Chat</string>
+    <string name="settings">Settings</string>
 </resources>

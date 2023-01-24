@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.diallingapp.databinding.FragmentContactInfoBinding
@@ -18,6 +19,7 @@ class ContactInfoFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var adapter: CallAdapter
     private val viewModel: CallViewModel by viewModels()
+    private val args by navArgs<ContactInfoFragmentArgs>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,6 +36,8 @@ class ContactInfoFragment : Fragment() {
     }
 
     private fun initListeners(){
+        binding.contactName.text = args.fullName
+        binding.contactNumber.text = args.phoneNumber
         binding.backButton.setOnClickListener{
             findNavController().popBackStack()
         }

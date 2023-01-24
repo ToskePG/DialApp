@@ -57,7 +57,11 @@ class ContactFragment : Fragment() {
     private fun initContactRecycler(){
         adapter = ContactAdapter(viewModel.contactList) {
                 contact -> run {
-            findNavController().navigate(R.id.action_contactFragment_to_contactInfoFragment)
+            val directions = ContactFragmentDirections.actionContactFragmentToContactInfoFragment(
+                contact.full_name,
+                contact.phone_number
+            )
+            findNavController().navigate(directions)
         }
         }
         binding.contactRecycler.layoutManager = LinearLayoutManager(this.requireActivity(), LinearLayoutManager.VERTICAL, false)

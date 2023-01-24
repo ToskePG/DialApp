@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/callFragment"
+        android:icon="@drawable/phone_home"
+        android:title="@string/call_frag"/>
+    <item
+        android:id="@+id/contactFragment"
+        android:icon="@drawable/person"
+        android:title="@string/contacts_frag"/>
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_icon"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/contactInfoFragment"
+        android:icon="@drawable/chat"
+        android:title="@string/chat_frag"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"/>
+
+</menu>
